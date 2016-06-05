@@ -11,7 +11,7 @@ try:
 
 
     for eachLine in fobj:
-        print eachLine
+        print eachLine,
 
 except IOError, e:
     print "file open error:", e
