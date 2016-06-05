@@ -64,3 +64,59 @@ print str("hello world 李杰")
 
 print isinstance( 1.23, ( int, long, float, complex ) )
 
+
+"""
+    if type(111) == type(0):
+        print "111 is an int type"
+
+"""
+
+import types
+
+#对象值比较
+print type(111) == types.IntType
+print type("string") == types.StringType
+
+#对象身份比较
+print type( 111 ) is types.IntType
+
+#另一种用法
+from types import IntType
+
+print type( 111 ) is IntType
+
+#使用isinstance()来判断类型
+print isinstance( 111, int )
+
+"""
+    类型工厂函数：
+        1. int()  long()  float()  complex()
+        2. str()  unicode()  basestring()
+        3. list() tuple()
+        4. type()
+
+        5. dict()
+        6. bool()
+        7. set()  frozenset()
+        8. object()
+        9. classmethod() 
+        10. staticmethod()
+        11. super()
+        12. property()
+        13. file()
+"""
+
+fd = open( "./README.md", "r" )
+print isinstance( fd, file )
+
+
+
+
+
+
+
+
+
+
+
+
