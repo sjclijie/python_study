@@ -110,7 +110,7 @@ fd = open( "./README.md", "r" )
 print isinstance( fd, file )
 
 
-
+print id( fd )
 
 
 
