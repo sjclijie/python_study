@@ -259,6 +259,30 @@ print "hello".zfill(10)
 
 
 
+a = "abc"
+print id(a)
+a = a + "dec"
+print id(a)
+
+s = "abcdefg"
+
+print "%sC%s" % ( s[0:2], s[3:] )
+
+s = u"我是李杰"
+
+print unicode( s )
+
+print ord( u"李" )
+print unichr( 26446 )
+
+#=========== ===== ===== ===== ===== =====
+
+# 1. 程序员出现字符串一定要使用unicode字符串
+# 2. 不要使用str()函数，用unicode()代替
+# 3. 不要使用过时的string模块
+# 4. 不到必须时不要在程序中使用encode和decode unicode字符串，除非要写入文件或者数据库
+
+# UnicodeError异常是在exceptions中定义的，ValueError的字类
 
 
 
