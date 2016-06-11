@@ -106,7 +106,23 @@ bList.sort()
 print bList
 
 
+#默认为浅拷贝
 
+person = ["name", ["saving", 100.00]]
+
+hubby = person[:]
+hubby = person[1][1] = 50.00
+
+wifey = list( person )
+
+print [ id(x) for x in person, hubby, wifey ]
+
+#深拷贝
+import copy
+aaa = copy.deepcopy( person )
+aaa[1][1] = 10.00
+print aaa
+print person
 
 
 
